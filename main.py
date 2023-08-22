@@ -1,9 +1,6 @@
-from flask import Flask
-from flask_cors import CORS
+from backend import create_app
 
-# instantiate app
-app = Flask(__name__)
-app.config.from_object(__name__)
+app = create_app()
 
-# enable cors
-CORS(app, resources={r'/*': {'origins': '*'}})
+if __name__ == "__main__":
+    app.run()
