@@ -2,9 +2,10 @@
 
 <template>
   <nav>
+    <div class="nav-bg-image"></div>
     <div class="nav-container">
       <div class="logo">
-        <span>R<span style="color: tomato">@</span>MIMS</span>
+        <span>R@MIMS</span>
       </div>
       <ul>
         <li><a href="">Home</a></li>
@@ -107,15 +108,29 @@ NAVBAR SECTION
 nav {
   width: 100%;
   height: 100vh;
+}
+
+.nav-bg-image {
+  width: 100%;
+  height: 100%;
   background-image: url("../assets/images/home.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 
 .nav-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 3% 7%;
+  margin-top: 60px;
 }
 
 .nav-container ul {
@@ -132,15 +147,20 @@ nav {
 }
 
 .nav-container ul li:hover {
-  background-color: greenyellow;
+  background: #e95793;
+  border-radius: 5px;
 }
 
 .nav-container a {
   text-decoration: none;
   color: white;
+  font-weight: bolder;
 }
 
 .logo {
+  background: #e95793;
+  padding: 8px;
+  border-radius: 5px;
   height: inherit;
   font-weight: bold;
   font-size: 30px;
@@ -150,9 +170,9 @@ nav {
 .banner {
   align-self: center;
   margin-left: 20px;
-  background-color: purple;
+  background: #610c9f;
   font-weight: bold;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
 }
 </style>
