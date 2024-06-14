@@ -12,15 +12,14 @@
         <li><a href="">About Us</a></li>
         <li><a href="">Gallery</a></li>
         <li><a href="">Blog</a></li>
-        <div class="banner">Get in Touch</div>
+        <div class="banner"><a href="#">Get in Touch</a></div>
       </ul>
     </div>
   </nav>
 
   <header>
-    <h1>Mummy Rach Metamorphosis Center</h1>
-    <span class="action-statement">You get what you deserve</span>
-    <button>Contact Us</button>
+    <h1>R@mims Metamorphosis Center</h1>
+    <div class="banner"><a href="#">Learn More</a></div>
   </header>
   <main>
     <section id="offers">
@@ -117,8 +116,8 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
 }
 
 .nav-container {
@@ -174,5 +173,32 @@ nav {
   font-weight: bold;
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
+}
+
+.banner a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner:hover {
+  background: #610c9f;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 60px;
+  color: whitesmoke;
 }
 </style>
