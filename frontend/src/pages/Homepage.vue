@@ -2,16 +2,18 @@
 
 <template>
   <nav>
-    <div class="logo">
-      <span>LOGO</span>
+    <div class="nav-container">
+      <div class="logo">
+        <span>R<span style="color: tomato">@</span>MIMS</span>
+      </div>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Blog</a></li>
+        <div class="banner">Get in Touch</div>
+      </ul>
     </div>
-    <ul>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Gallery</li>
-      <li>Blog</li>
-      <div class="banner">Get in Touch</div>
-    </ul>
   </nav>
 
   <header>
@@ -98,11 +100,59 @@
 </template>
 
 <style scoped>
+/*
+NAVBAR SECTION
+*/
+
 nav {
   width: 100%;
-  height: 100%;
-  color: red;
-
+  height: 100vh;
   background-image: url("../assets/images/home.jpeg");
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3% 7%;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+.nav-container ul li {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 7px;
+}
+
+.nav-container ul li:hover {
+  background-color: greenyellow;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  height: inherit;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.banner {
+  align-self: center;
+  margin-left: 20px;
+  background-color: purple;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
 }
 </style>
